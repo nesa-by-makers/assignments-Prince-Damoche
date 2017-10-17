@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<script>
+		function validateInputs()
+		{
+			var validationsummary = document.getElementById("validationsummary");
+			var firstname = document.getElementById("first name");
+			var lastname = document.getElementById("last name");
+			if (firstname.value.length < 2)
+			{
+				validationsummary.innerHTML = "First name must be at least two characters !";
+
+			}
+			else if (lastname.value.length < 2)
+			{
+				validationsummary.innerHTML = "Last name must be at least two characters !";
+
+			}
+			else 
+			{
+				validationsummary.innerHTML = "";
+			}
+		}
+	</script>
+	
+</head>
+<body>
+	<p id="validationsummary"></p>
+	<form>
+		<fieldset>
+			<legend>CONTACT US</legend>
+		First name
+		<input id="first name" name="first name" required minlength="2">
+		<br></br>
+		Last name
+		<input id="last name" type="text" name="last name" placeholder="Last name" required minlength="2">
+		<br></br>
+		Email address
+		<input id="Email" name="Email" placeholder="Email" required type="Email">
+		<br></br>
+		Phone number
+		<input type="number" name="Phone number" value="" required>
+		<br></br>
+		Gender
+		<input type="radio" name="gender" value="male" required>Male</input>
+		<input type="radio" name="gender" value="Female">Female</input>
+		<br></br>
+		Subject
+		<input type="text" name="Subject" value="" required>
+		<br></br>
+		Message<br></br>
+		<textarea rows="5" cols="20" required></textarea>
+		<br></br>
+		<input type="button" name="submit" value="submit" onclick="validateInputs()">
+		
+		</fieldset>
+	</form>
+
+</body>
+</html>

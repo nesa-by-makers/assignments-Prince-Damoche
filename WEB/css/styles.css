@@ -1,0 +1,54 @@
+body {
+	font-size: 12px;
+	font-family: raleway;
+	letter-spacing: 0.15em;
+	background-color: #efefef;
+	font-weight: bold;
+	height: 1000px;
+	
+}
+.container{
+	width: 100%;
+	
+	margin: 10px auto 10px auto;
+	padding: 20px;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 1000px;
+
+
+}
+
+
+ul{
+	width: 61%;
+	margin: auto;
+	text-align: center;
+	padding: 1%;
+
+	
+	
+}
+li{
+	display: inline-block;
+	margin: auto;
+	font-size: 12px;
+	font: raleway;
+	font-weight: bold;
+
+}
+a{
+	color: red;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;
+
+}
+.active{
+	background-color: black;
+	
+}
+.change {
+	color: white;
+}
+

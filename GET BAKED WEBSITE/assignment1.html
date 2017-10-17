@@ -1,0 +1,33 @@
+<html>
+	<head> 
+		<script>
+			function outpute()
+			{
+				var a = parseInt(document.getElementById('a').value);
+				var b = parseInt(document.getElementById('b').value);
+				var c = parseInt(document.getElementById('c').value);
+				var d = parseInt(document.getElementById('d').value);
+				var e = parseInt(document.getElementById('e').value);
+				var f = (a*b*c*d*e);
+				window.alert("your age is " + f);
+			}
+			
+		</script>
+	</head>
+	<body>
+		<br></br>
+		<input id="a"/>
+		<br></br>
+		<input id="b"/>
+		<br></br>
+		<input id="c"/>
+		<br></br>
+		<input id="d"/>
+		<br></br>
+		<input id="e"/>
+		<br></br>
+
+		<input type="button" value="Result" onclick=outpute() />
+		
+	</body>
+</html>

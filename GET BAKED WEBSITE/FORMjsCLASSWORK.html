@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	
+	<script>
+		function validateInputs()
+		{
+			var validationsummary = document.getElementById("validationsummary");
+			var firstname = document.getElementById("first name");
+			var lastname = document.getElementById("last name");
+			var address = document.getElementById("address");
+			var occupation = document.getElementById("occupation");
+			var nationality = document.getElementById("nationality");
+			window.alert ("Success");
+
+			validationsummary.innerHTML ="";
+
+			if (firstname.value.length < 2)
+			{
+				validationsummary.innerHTML = validationsummary.innerHTML + "First name must be at least two characters ! <br/>";
+
+			}
+			if (lastname.value.length < 2)
+			{
+				validationsummary.innerHTML = validationsummary.innerHTML + "Last name must be at least two characters ! <br/>";
+			}
+			if (address.value.length < 2)
+			{
+				validationsummary.innerHTML = validationsummary.innerHTML + "address must be at least two characters ! <br/>";
+			}
+			if (occupation.option.multiple < 1)
+			{
+				validationsummary.innerHTML = validationsummary.innerHTML + "Please choose an occupation ! <br/>";
+			}
+			if (nationality.option.multiple < 1)
+			{
+				validationsummary.innerHTML = validationsummary.innerHTML + "Please choose a nationality ! <br/>";
+			}
+			
+		}
+
+	</script>
+	
+</head>
+<body>
+	<p id="validationsummary"></p>
+	<form>
+		<br></br>
+			<br></br>
+			<br></br>
+		<fieldset> 
+			<legend>CONTACT US</legend>
+		First name
+		<input id="first name" name="first name" required minlength="2">
+		<br></br>
+		Last name
+		<input id="last name" type="text" name="last name" required minlength="2">
+		<br></br>
+		Email address
+		<input id="Email" name="Email" required type="Email">
+		<br></br>
+		Address
+		<input id="address" type="text" name="address" value="" required>
+		<br></br>
+		Occupation
+	<select id="occupation" type="occupation" name="occupation" required>
+		<option type="" value="" ></option>
+		<option type="text" Doctor>Doctor</option>
+		<option type="text" Lawyer>Lawyer</option>
+		<option type="text" Developer>Developer</option>
+	</select>
+		
+		<br></br>
+		Nationality
+		<select id="nationality" type="nationality" name="nationality" required>
+		<option type="" value="" ></option>
+		<option type="text" Nigerian>Nigerian</option>
+		<option type="text" Ghanain>Ghanain</option>
+		<option type="text" South African>South African</option>
+	</select>
+		<br></br>
+		<input type="button" name="submit" value="submit" onclick="validateInputs()">
+		
+		</fieldset>
+	</form>
+
+</body>
+</html>

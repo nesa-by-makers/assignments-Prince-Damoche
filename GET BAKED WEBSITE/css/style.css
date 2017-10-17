@@ -1,0 +1,44 @@
+body {
+	border: 10px; 
+	position: right;
+	padding: 20px;
+	background-color: #ff0000;
+	font-family: league gothic; 
+	text-align: middle;
+}
+header img{
+	border: 10px; 
+	position: right;
+	padding: 20px;
+	background-color: #ff0000;
+	font-family: league gothic; 
+}
+
+header li {
+	display: inline;
+	text-decoration: none;
+	margin-left: 20px;
+	position: center;
+	background-color: #ffffff;
+}
+nav div {
+	display: inline;
+	text-decoration: none;
+	margin-left: 20px;
+	position: center;
+	background-color: #ffffff;
+
+}
+	footer li {
+	display: inline;
+	text-decoration: none;
+	margin-left: 20px;
+	position: center;
+}
+section li {
+	display: inline;
+	text-decoration: none;
+	margin-left: 20px;
+	position: center;
+}
+}

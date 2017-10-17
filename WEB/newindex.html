@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Baked NG Website</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="container" onscroll="">
+	
+		
+		<ul class="navigation" >
+			<li><a href="#" id="about">About</a></li>
+			<li><a href="#" id="contact">Contact</a></li>
+			<li><a href="#" id="blog">Blog</a></li>	
+
+		</ul>
+		<br>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$(function() {
+				$(window).on("scroll", function() {
+					if($(window).scrollTop() > 100) {
+						$(".container").addClass("active");
+						document.getElementById('about').style.color = "white";
+						document.getElementById('contact').style.color = "white";
+						document.getElementById('blog').style.color = "white";
+						} else {
+							$(".container").removeClass("active");
+							document.getElementById('about').style.color = "red";
+						document.getElementById('contact').style.color = "red";
+						document.getElementById('blog').style.color = "red";
+						
+						}
+				});
+			});
+			
+		
+		</script>
+
+</body>
+</html>
